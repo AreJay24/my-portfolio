@@ -44,14 +44,51 @@
       margin: auto;
     }
 
-    .hero {
+    .hero-banner {
+      background: linear-gradient(135deg, #002244 0%, #FB4F14 100%);
+      color: white;
+      padding: 90px 40px;
+      border-bottom: 4px solid #FB4F14;
+      text-align: left;
+    }
+
+    .hero-banner h1 {
+      font-size: 3rem;
+      margin-bottom: 12px;
+      color: white;
+    }
+
+    .hero-banner p {
+      font-size: 1.15rem;
+      max-width: 700px;
+      margin-bottom: 24px;
+      color: white;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: white;
+      color: #002244;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: background 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background: #FB4F14;
+      color: white;
+    }
+
+    .about-section {
       background: white;
       padding-top: 70px;
       padding-bottom: 70px;
       border-bottom: 3px solid #FB4F14;
     }
 
-    .hero h2 {
+    .about-section h2 {
       font-size: 2rem;
       margin-bottom: 10px;
       color: #002244;
@@ -108,6 +145,7 @@
     <h1>Richard Jackson</h1>
     <nav>
       <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
       <a href="#skills">Skills</a>
@@ -115,7 +153,13 @@
     </nav>
   </header>
 
-  <section class="hero" id="about">
+  <section class="hero-banner">
+    <h1>Richard Jackson</h1>
+    <p>I’m on a data science journey driven by curiosity, problem-solving, and the power of turning raw data into meaningful insight.</p>
+    <a class="cta-btn" href="#projects">View My Work</a>
+  </section>
+
+  <section class="about-section" id="about">
     <h2>About Me</h2>
     <p>I am a dependable and adaptable professional with a strong background in roofing, construction, technical maintenance, and hands-on field operations. Throughout my career, I have built a reputation for learning quickly, working safely, and contributing effectively to teams in demanding environments. My experience includes removing and installing roofing materials, supporting bridge construction projects, performing concrete work, and maintaining cryptographic and facility equipment with precision and care. I bring a combination of physical stamina, practical problem-solving, and a commitment to quality that has helped me succeed across diverse roles and industries. I am known for being dependable, collaborative, and proactive, and I am motivated by opportunities to improve workflows, support team success, and deliver reliable results.</p>
   </section>
@@ -170,6 +214,19 @@
     <div class="card">
       <h2>Education</h2>
       <p><strong>Aviation Maintenance Technology (Associate's Degree)</strong><br />Aviation Institute of Maintenance — Kansas City, MO<br />September 2007 to September 2009</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="card">
+      <h2>Projects</h2>
+      <p>I am building a growing portfolio centered on data analysis, visualization, and machine learning projects that turn complex information into clear insights.</p>
+      <ul>
+        <li>Python-based data cleaning and analysis workflows</li>
+        <li>SQL reporting and exploratory data analysis</li>
+        <li>Machine learning experiments and predictive modeling</li>
+        <li>Data visualization projects that communicate findings clearly</li>
+      </ul>
     </div>
   </section>
 
